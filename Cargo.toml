@@ -2,3 +2,7 @@
 name = "stackoverflow"
 version = "0.1.0"
 authors = ["Sri Harsha Kappala <sriharsha.kappala@hotmail.com>"]
+
+[dependencies]
+curl = "0.2"
+rustc-serialize = "0.3"
