@@ -13,9 +13,8 @@ impl UserService {
         UserService { client: c }
     }
 
-    pub fn get(self, name: &str) -> User {
-        let mut url = "http://api.stackexchange.com/2.2/users/2357380?site=stackoverflow".to_string();
-        url.push_str(name);
+    pub fn get(self) -> User {
+        let url = "http://api.stackexchange.com/2.2/users/2357380?site=stackoverflow".to_string();
 
         let req = self.client.request(url.as_ref());
 
